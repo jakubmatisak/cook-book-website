@@ -1,0 +1,9 @@
+{
+  "name": "cook-book-website",
+  "private": true,
+  "type": "module",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  }
+}

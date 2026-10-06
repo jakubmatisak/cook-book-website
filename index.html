@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">Kuchárska kniha – recepty, jedálniček a nákup pre celú rodinu</title>
+<meta name="description" content="Rodinná aplikácia na recepty, týždenný jedálniček a nákupný zoznam. Zadarmo na vlastnom účte Cloudflare, bez reklám.">
+<meta name="theme-color" content="#F5EFE4">
+<meta property="og:title" content="Kuchárska kniha">
+<meta property="og:description" content="Recepty, jedálniček a nákup pre celú rodinu – zadarmo na vlastnom Cloudflare.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jakubmatisak.github.io/cook-book-website/assets/screens/hero-plan.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Instrument+Sans:wght@400..700&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#obsah" data-i18n="skip">Preskočiť na obsah</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="#">Kuchárska kniha</a>
+    <nav class="nav" aria-label="Hlavná navigácia" data-i18n-aria="nav.label">
+      <a href="#funkcie" data-i18n="nav.features">Funkcie</a>
+      <a href="#nasadenie" data-i18n="nav.deploy">Nasadenie</a>
+      <a href="#licencia" data-i18n="nav.license">Licencia</a>
+      <a href="https://github.com/jakubmatisak/cook-book">GitHub</a>
+      <span class="lang" role="group" aria-label="Jazyk stránky" data-i18n-aria="nav.lang">
+        <button type="button" data-lang="sk" aria-pressed="true">SK</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+
+<section class="wrap hero" aria-labelledby="hero-title">
+  <div class="hero-text">
+    <p class="caps herb" data-i18n="hero.kicker">Rodinná aplikácia na varenie</p>
+    <h1 id="hero-title" class="display" data-i18n="hero.title">Recepty, jedálniček a nákup pre celú rodinu</h1>
+    <p class="lead" data-i18n="hero.lead">Jedno miesto na všetko, čo sa doma varí. Beží zadarmo na tvojom vlastnom účte Cloudflare, bez reklám a bez predplatného, a tvoje recepty ostanú u teba.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#nasadenie"><span data-i18n="hero.cta">Ako si ju nasadiť</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      <a class="btn btn-ghost" href="https://github.com/jakubmatisak/cook-book">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+        <span data-i18n="hero.code">Zdrojový kód</span></a>
+    </div>
+    <p class="meta" data-i18n="hero.meta">Verzia 1.0 · slovenčina a angličtina · počítač aj mobil</p>
+  </div>
+  <div class="hero-shots">
+    <picture class="shot shot-desktop">
+      <source srcset="assets/screens/hero-plan.webp" type="image/webp">
+      <img src="assets/screens/hero-plan.png" width="1440" height="900" alt="Jedálniček na týždeň v aplikácii Kuchárska kniha: dni v stĺpcoch, jedlá v riadkoch raňajky, obed a večera" data-i18n-alt="hero.alt" fetchpriority="high">
+    </picture>
+    <picture class="shot shot-phone">
+      <source srcset="assets/screens/dark-mobile.webp" type="image/webp">
+      <img src="assets/screens/dark-mobile.png" width="390" height="844" alt="Nákupný zoznam na mobile v tmavom režime" data-i18n-alt="hero.mobileAlt">
+    </picture>
+  </div>
+</section>
+
+<section class="band-top" aria-labelledby="why-title">
+  <div class="wrap why">
+    <h2 id="why-title" class="why-title" data-i18n="why.title">Čo bude dnes na večeru?</h2>
+    <p class="lead" data-i18n="why.text">Recepty z babkinho zošita, odkazy z internetu a nákupný lístok na chladničke sú zrazu na jednom mieste. Naplánuješ týždeň, aplikácia spočíta porcie podľa toho, kto je pri stole, a z plánu pripraví nákup, v ktorom chýba len to, čo naozaj nemáš doma.</p>
+  </div>
+</section>
+
+<section class="raised" aria-labelledby="how-title">
+  <div class="wrap section">
+    <h2 id="how-title" class="title-lg" data-i18n="how.title">Ako to funguje</h2>
+    <ol class="steps">
+      <li>
+        <span class="num" aria-hidden="true">1</span>
+        <h3 class="title-md" data-i18n="how.1.title">Pridaj recepty</h3>
+        <p data-i18n="how.1.text">Napíš vlastné, alebo ich jedným klikom prevezmi z webu. Aplikácia načíta názov, suroviny so skupinami, postup aj fotku a ty ich len skontroluješ.</p>
+      </li>
+      <li>
+        <span class="num" aria-hidden="true">2</span>
+        <h3 class="title-md" data-i18n="how.2.title">Naplánuj týždeň</h3>
+        <p data-i18n="how.2.text">Rozlož jedlá do dní, presuň ich myšou, ulož si obľúbený týždeň ako šablónu. Keď nevieš, aplikácia navrhne, čo uvariť dnes.</p>
+      </li>
+      <li>
+        <span class="num" aria-hidden="true">3</span>
+        <h3 class="title-md" data-i18n="how.3.title">Nakúp podľa porcií</h3>
+        <p data-i18n="how.3.text">Nákupný zoznam sa vyráta z plánu podľa toho, kto je pri stole, zoradí sa podľa oddelení v obchode a odpočíta to, čo máš v špajzi.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="funkcie" class="wrap features" aria-labelledby="features-title">
+  <div class="section-head">
+    <p class="caps herb" data-i18n="features.kicker">Funkcie</p>
+    <h2 id="features-title" class="title-xl" data-i18n="features.title">Všetko, čo sa doma okolo jedla rieši</h2>
+  </div>
+
+  <article class="feature">
+    <div class="feature-text">
+      <p class="caps herb" data-i18n="recipes.kicker">Recepty a import</p>
+      <h3 class="title-lg" data-i18n="recipes.title">Kuchárka, ktorá si pamätá aj babkine recepty</h3>
+      <p data-i18n="recipes.text">Recepty s porciami, časom, štítkami a skupinami surovín (korpus, náplň, poleva). Hľadanie podľa názvu alebo suroviny, aj bez diakritiky. Recept z internetu pridáš jedným klikom, cez záložku v prehliadači alebo rozšírenie do Chromu.</p>
+      <ul class="checks">
+        <li data-i18n="recipes.point1">Mriežka aj tabuľka, filtre s počtami, hromadné úpravy</li>
+        <li data-i18n="recipes.point2">Režim varenia s časovačmi a obrazovkou, ktorá nezhasne</li>
+      </ul>
+    </div>
+    <picture class="shot">
+      <source srcset="assets/screens/recipe-detail.webp" type="image/webp">
+      <img src="assets/screens/recipe-detail.png" width="1280" height="800" loading="lazy" alt="Detail receptu Lasagne so skupinami surovín Ragú a Bešamel a s postupom po krokoch" data-i18n-alt="recipes.alt">
+    </picture>
+  </article>
+
+  <article class="feature feature-flip">
+    <div class="feature-text">
+      <p class="caps herb" data-i18n="plan.kicker">Jedálniček</p>
+      <h3 class="title-lg" data-i18n="plan.title">Týždeň na jeden pohľad</h3>
+      <p data-i18n="plan.text">Raňajky, obed, večera aj desiata pre každý deň. Jedlo presunieš myšou, týždeň skopíruješ alebo uložíš ako šablónu. Ohlásiš návštevu na pár dní a porcie sa prepočítajú samy.</p>
+    </div>
+    <picture class="shot">
+      <source srcset="assets/screens/plan-week.webp" type="image/webp">
+      <img src="assets/screens/plan-week.png" width="1280" height="800" loading="lazy" alt="Jedálniček na týždeň po dňoch: raňajky, obed a večera s porciami a upozornením na alergiu alebo averziu" data-i18n-alt="plan.alt">
+    </picture>
+  </article>
+
+  <article class="feature">
+    <div class="feature-text">
+      <p class="caps herb" data-i18n="shopping.kicker">Nákup</p>
+      <h3 class="title-lg" data-i18n="shopping.title">Nákupný lístok, ktorý sa napíše sám</h3>
+      <p data-i18n="shopping.text">Suroviny z celého týždňa sa sčítajú a prepočítajú na jednotky, zoradia podľa oddelení a odpočíta sa, čo máš doma. Odškrtávanie funguje aj bez signálu a vidí ho celá domácnosť. Na papier ho vytlačíš úsporne na viac stĺpcov.</p>
+    </div>
+    <picture class="shot">
+      <source srcset="assets/screens/shopping.webp" type="image/webp">
+      <img src="assets/screens/shopping.png" width="1280" height="800" loading="lazy" alt="Nákupný zoznam zoradený podľa oddelení, pri každej surovine množstvo a recepty, z ktorých je" data-i18n-alt="shopping.alt">
+    </picture>
+  </article>
+
+  <div class="cards">
+    <article class="card">
+      <picture class="shot">
+        <source srcset="assets/screens/pantry.webp" type="image/webp">
+        <img src="assets/screens/pantry.png" width="1280" height="800" loading="lazy" alt="Špajza so surovinami, ktoré sú doma, s množstvom a dňami do konca trvanlivosti" data-i18n-alt="pantry.alt">
+      </picture>
+      <p class="caps herb" data-i18n="pantry.kicker">Špajza</p>
+      <h3 class="title-md" data-i18n="pantry.title">Čo viem uvariť z toho, čo mám</h3>
+      <p data-i18n="pantry.text">Označ, čo máš doma, s množstvom a trvanlivosťou. Recepty sa zoradia podľa toho, koľko surovín ti chýba.</p>
+    </article>
+    <article class="card">
+      <picture class="shot">
+        <source srcset="assets/screens/family.webp" type="image/webp">
+        <img src="assets/screens/family.png" width="1280" height="800" loading="lazy" alt="Ľudia pri stole: dvaja dospelí, dve deti s menšou porciou a návšteva s alergiou na orechy" data-i18n-alt="table.alt">
+      </picture>
+      <p class="caps herb" data-i18n="table.kicker">Pri stole</p>
+      <h3 class="title-md" data-i18n="table.title">Porcie podľa toho, kto je</h3>
+      <p data-i18n="table.text">Dospelí, deti s menšou porciou aj návšteva. Alergie, averzie a diéty sa pripomenú pri plánovaní jedla.</p>
+    </article>
+    <article class="card">
+      <picture class="shot">
+        <source srcset="assets/screens/home-tiles.webp" type="image/webp">
+        <img src="assets/screens/home-tiles.png" width="1280" height="800" loading="lazy" alt="Prehľad receptov po typoch jedla: polievky, hlavné jedlá, šaláty, dezerty a raňajky" data-i18n-alt="homes.alt">
+      </picture>
+      <p class="caps herb" data-i18n="homes.kicker">Domácnosti</p>
+      <h3 class="title-md" data-i18n="homes.title">Pre jednu rodinu aj pre starých rodičov</h3>
+      <p data-i18n="homes.text">Jeden človek môže patriť do viacerých domácností. Recept, ktorý zdieľaš, si iné domácnosti skopírujú k sebe.</p>
+    </article>
+  </div>
+
+  <ul class="extras" aria-label="Ďalšie vlastnosti" data-i18n-aria="extras.label">
+    <li data-i18n="extras.dark">Tmavý režim</li>
+    <li data-i18n="extras.mobile">Mobil a práca bez signálu</li>
+    <li data-i18n="extras.lang">Slovenčina a angličtina</li>
+    <li data-i18n="extras.export">Tlač, export a záloha</li>
+  </ul>
+</section>
+
+<section class="wrap data-section" aria-labelledby="data-title">
+  <div class="data-panel">
+    <div class="data-intro">
+      <h2 id="data-title" class="title-lg" data-i18n="data.title">Tvoje dáta ostanú u teba</h2>
+      <p data-i18n="data.text">Aplikácia nie je služba, do ktorej sa registruješ. Nasadíš si ju sám na svoj účet a nikto iný k nej nemá prístup.</p>
+    </div>
+    <ul class="facts">
+      <li><span class="fact-big">0 €</span><span class="fact-note" data-i18n="data.cost">mesačne na bezplatnom pláne Cloudflare</span></li>
+      <li><span class="fact-mid" data-i18n="data.invited">Len pozvaní</span><span class="fact-note" data-i18n="data.invitedText">prihlásenie cez Cloudflare Access, iba ľudia, ktorých pozveš</span></li>
+      <li><span class="fact-mid" data-i18n="data.tracking">Bez sledovania</span><span class="fact-note" data-i18n="data.trackingText">žiadne reklamy, analytika ani predaj údajov</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="nasadenie" class="band-top" aria-labelledby="deploy-title">
+  <div class="wrap split">
+    <div class="split-intro">
+      <p class="caps herb" data-i18n="deploy.kicker">Nasadenie</p>
+      <h2 id="deploy-title" class="title-xl" data-i18n="deploy.title">Nasaď si ju za približne pol hodiny</h2>
+      <p data-i18n="deploy.text">Netreba programovať, stačí postupovať podľa návodu. Potrebuješ účet na Cloudflare (zadarmo) a počítač s Node.js.</p>
+      <a class="btn btn-primary" href="https://github.com/jakubmatisak/cook-book#readme"><span data-i18n="deploy.guide">Podrobný návod</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+    <ol class="deploy-steps">
+      <li><span class="num" aria-hidden="true">1</span><div><h3 data-i18n="deploy.1.title">Stiahni zdrojový kód</h3><p data-i18n="deploy.1.text">Stiahni repozitár zo stránky GitHub alebo si ho skopíruj ku sebe (fork).</p></div></li>
+      <li><span class="num" aria-hidden="true">2</span><div><h3 data-i18n="deploy.2.title">Priprav Cloudflare</h3><p data-i18n="deploy.2.text">Založ bezplatný účet, databázu D1 a úložisko fotiek R2.</p></div></li>
+      <li><span class="num" aria-hidden="true">3</span><div><h3 data-i18n="deploy.3.title">Nastav prihlásenie</h3><p data-i18n="deploy.3.text">Zapni Cloudflare Access a zapíš e-maily ľudí, ktorí sa môžu prihlásiť.</p></div></li>
+      <li><span class="num" aria-hidden="true">4</span><div><h3 data-i18n="deploy.4.title">Nasaď jedným príkazom</h3><code>npm run deploy</code></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="licencia" class="raised" aria-labelledby="license-title">
+  <div class="wrap split">
+    <div class="split-intro">
+      <p class="caps herb" data-i18n="license.kicker">Licencia</p>
+      <h2 id="license-title" class="title-lg" data-i18n="license.title">Voľne pre rodiny, komerčne len so súhlasom</h2>
+      <p data-i18n="license.text">Aplikácia je pod licenciou PolyForm Noncommercial 1.0.0. Pre seba, rodinu, učenie či hobby si ju môžeš stiahnuť, upraviť a nasadiť bez pýtania. Firma, predaj alebo prevádzka ako služba pre iných potrebuje písomný súhlas autora.</p>
+      <a class="link" href="https://github.com/jakubmatisak/cook-book/blob/main/LICENSE" data-i18n="license.full">Celé znenie licencie</a>
+    </div>
+    <div class="faq" role="region" aria-label="Časté otázky" data-i18n-aria="faq.label">
+      <details><summary data-i18n="faq.cost.q">Koľko to stojí?</summary><p data-i18n="faq.cost.a">Nič. Celá aplikácia sa zmestí do bezplatného plánu Cloudflare (Workers, databáza D1, úložisko R2 aj Access do 50 používateľov).</p></details>
+      <details><summary data-i18n="faq.code.q">Musím vedieť programovať?</summary><p data-i18n="faq.code.a">Nie. Stačí nainštalovať Node.js a skopírovať pár príkazov z návodu.</p></details>
+      <details><summary data-i18n="faq.data.q">Kde sú moje recepty a fotky?</summary><p data-i18n="faq.data.a">Na tvojom účte Cloudflare. Kedykoľvek si ich stiahneš ako zálohu alebo ako recepty v Markdowne.</p></details>
+      <details><summary data-i18n="faq.business.q">Môžem ju použiť vo firme?</summary><p data-i18n="faq.business.a">Len s písomným súhlasom autora. Ozvi sa cez GitHub.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="wordmark wordmark-sm">Kuchárska kniha</span>
+    <a href="https://github.com/jakubmatisak/cook-book" data-i18n="footer.app">Aplikácia na GitHube</a>
+    <a href="https://github.com/jakubmatisak/cook-book-website" data-i18n="footer.site">Táto stránka</a>
+    <a href="https://github.com/jakubmatisak/cook-book/blob/main/LICENSE">PolyForm Noncommercial 1.0.0</a>
+    <span class="muted">2026</span>
+  </div>
+</footer>
+</body>
+</html>
